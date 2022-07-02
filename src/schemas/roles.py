@@ -4,6 +4,9 @@ from typing import Optional
 class RoleBase(BaseModel):
     name: str
 
+class RoleQuery(BaseModel):
+    id: int
+
 class RoleIn(RoleBase):
     pass
 
