@@ -35,8 +35,14 @@ markupsafe==2.1.1
     # via
     #   jinja2
     #   mako
+mysql-connector-python==8.0.29
+    # via -r requirements.in
+protobuf==4.21.2
+    # via mysql-connector-python
 pydantic==1.9.1
     # via flask-pydantic
+python-dotenv==0.20.0
+    # via -r requirements.in
 sqlalchemy==1.4.39
     # via
     #   alembic
