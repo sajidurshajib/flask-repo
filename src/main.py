@@ -4,7 +4,7 @@ from api.v1.register_blueprint import register_blueprint_v1
 app = Flask(__name__)
 
 
-@app.route('/', methods=['get', 'post'])
+@app.route('/', methods=['get'])
 def index():
     return {'msg':'Hello Flask'}
 

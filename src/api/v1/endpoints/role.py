@@ -1,6 +1,7 @@
 from flask import Blueprint
 from flask_pydantic import validate
 from schemas import RoleIn, RoleOut, RoleUpdate, RoleQuery
+from services import roles_service
 
 
 role_blueprint = Blueprint('role_blueprint', __name__)
