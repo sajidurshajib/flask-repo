@@ -8,18 +8,7 @@ app.register_blueprint(routes.routes)
 @app.route("/", methods=["GET", "POST"])
 def index():
     # print(request.args.get('code'))
-    if request.method == "GET":
-        return jsonify(msg="GET Response"), 200
-    if request.method == "POST":
-        return jsonify(msg="POST Response"), 201
-
-
-@app.route("/<int:id>", methods=["PATCH", "DELETE"])
-def single(id: int):
-    if request.method == "PATCH":
-        return jsonify(msg="Patch response", id=id), 202
-    if request.method == "DELETE":
-        return jsonify(msg="Remove Response", id=id), 200
+    return jsonify(msg='Welcome to flask-repo')
 
 
 if __name__ == "__main__":
