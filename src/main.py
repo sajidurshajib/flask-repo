@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 from api.v1 import routes
 
 app = Flask(__name__)
